@@ -46,9 +46,17 @@ And Remember our problem? which was **Given clinical parameters about a patient,
 And remember our evaluation metric?
 If we can reach 95% accuracy at predicting whether or not a patient has heart disease during the proof of concept, we'll pursure this project
 
-### Hyperparameter Tuning
+### 7. Hyperparameter Tuning
+**Tuning models with with RandomizedSearchCV**
+Reading the Scikit-Learn documentation, we find there's a number of different hyperparameters we can tune.
+**Tuning a model with GridSearchCV**
+The difference between RandomizedSearchCV and GridSearchCV is where RandomizedSearchCV searches over a grid of hyperparameters performing n_iter combinations, GridSearchCV will test every single possible combination.
 
-### Evaluating a classification model, beyond accuracy
+In short:
+
+RandomizedSearchCV - tries n_iter combinations of hyperparameters and saves the best.
+GridSearchCV - tries every single combination of hyperparameters and saves the best.
+### 8. Evaluating a classification model, beyond accuracy
 Now after we have tuned a model, we will getsome of the metrics we discussed before.
 We want:
 ROC curve and AUC score - `_RocCurveDisplay()_`
@@ -59,7 +67,7 @@ Precision - `precision_score()`
 Recall - `recall_score()`
 F1-score - `f1_score()`
 
-### Feature importance
+### 9. Feature importance
 Feature importance will be solving the question, "which features contributing most to the outcomes of the model?"
 Or for our problem, trying to predict heart disease using a patient's medical characterisitcs, which charateristics contribute most to a model predicting whether someone has heart disease or not?
 How each model finds patterns in data is slightly different, how a model judges how important those patterns are is different as well. This means for each model, there's a slightly different way of finding which features were most important.
