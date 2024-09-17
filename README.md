@@ -53,11 +53,11 @@ Now after we have tuned a model, we will getsome of the metrics we discussed bef
 We want:
 ROC curve and AUC score - `_RocCurveDisplay()_`
 Note: This was previously sklearn.metrics.plot_roc_curve(), as of Scikit-Learn version 1.2+, it is sklearn.metrics.RocCurveDisplay().
-Confusion matrix - _confusion_matrix()_
-Classification report - _classification_report()_
-Precision - _precision_score()_
-Recall - _recall_score()_
-F1-score - _f1_score()_
+Confusion matrix - `confusion_matrix()`
+Classification report - `classification_report()`
+Precision - `precision_score()`
+Recall - `recall_score()`
+F1-score - `f1_score()`
 
 ### Feature importance
 Feature importance will be solving the question, "which features contributing most to the outcomes of the model?"
